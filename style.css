@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+:root{--primary:#635bff;--secondary:#8b5cf6;--dark:#17172b;--text:#55556b;--light:#f7f8ff;--border:#e9e9f5;--white:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:'Poppins',Arial,sans-serif;background:var(--white);color:var(--dark);line-height:1.6}
+button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}
+.header{width:100%;min-height:82px;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;gap:20px;background:rgba(255,255,255,.97);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.logo{font-size:23px;font-weight:800;letter-spacing:-1px;white-space:nowrap}.logo-icon,.logo-highlight{color:var(--primary)}.logo-icon{margin-right:5px}
+.header nav{display:flex;gap:30px;color:var(--text);font-size:13px;font-weight:500}.header nav a:hover{color:var(--primary)}
+.header-btn{background:var(--primary);color:#fff;padding:11px 19px;border-radius:10px;font-size:13px;font-weight:600}
+.hero{text-align:center;padding:100px 20px 90px;background:radial-gradient(ellipse at 50% 0%,#eeedff 0%,#fff 65%)}
+.hero-badge{display:inline-block;padding:8px 16px;border:1px solid #dedbff;background:#fff;color:var(--primary);border-radius:50px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:25px}
+.hero h1{font-size:clamp(36px,5.5vw,66px);font-weight:800;line-height:1.18;letter-spacing:-2px}.hero h1 span{background:linear-gradient(90deg,#635bff,#a855f7);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-description{max-width:600px;margin:22px auto 30px;color:var(--text);font-size:15px}
+.primary-btn{display:inline-block;border:none;cursor:pointer;background:linear-gradient(100deg,#635bff,#8b5cf6);color:#fff;padding:15px 25px;border-radius:12px;font-weight:600;font-size:14px;box-shadow:0 8px 22px #635bff35;transition:transform .2s,box-shadow .2s}
+.primary-btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px #635bff45}.hero-note{margin-top:22px;color:#77778b;font-size:12px}
+.platform-section,.generator-section{padding:80px 8%}.platform-section{background:#fbfbff}
+.section-heading{text-align:center;margin-bottom:40px}.eyebrow{display:inline-block;color:var(--primary);font-size:11px;font-weight:700;letter-spacing:2px;margin-bottom:12px}
+.section-heading h2{font-size:clamp(25px,3vw,36px);font-weight:800;letter-spacing:-1px}.section-heading p{color:var(--text);font-size:14px;margin-top:10px}
+.platform-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.platform-card{position:relative;text-align:left;padding:23px 18px;background:#fff;border:1px solid var(--border);border-radius:18px;cursor:pointer;display:flex;flex-direction:column;align-items:flex-start;transition:transform .25s,border-color .25s,box-shadow .25s}
+.platform-card:hover,.platform-card:focus-visible,.platform-card.active{transform:translateY(-5px);border-color:#c6c0ff;box-shadow:0 15px 35px #635bff13;outline:none}
+.platform-icon{width:50px;height:50px;border-radius:15px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:27px;font-weight:800;margin-bottom:16px}
+.tiktok{background:#171717}.facebook{background:#1877f2}.instagram{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)}.pubg{background:#e7a827}.freefire{background:#ff7043}.youtube{background:#ff0033}.whatsapp{background:#25d366}.gaming{background:#635bff}.cool{background:#0ea5e9}.stylish{background:#8b5cf6}
+.platform-name{font-weight:700;font-size:14px}.platform-subtitle{color:#85859a;font-size:10px;margin-top:4px}.card-arrow{position:absolute;right:15px;top:16px;color:#9999ad;font-size:18px}
+.generator-section{background:#fff}.generator-box{max-width:650px;margin:0 auto;padding:35px;border:1px solid var(--border);border-radius:22px;background:#fff;box-shadow:0 15px 55px #34345a0b}
+.selected-platform{background:#f7f6ff;padding:12px 14px;border-radius:10px;margin-bottom:22px;color:var(--text);font-size:13px}.selected-platform strong{color:var(--primary)}
+.generator-box label{display:block;margin-bottom:9px;font-size:13px;font-weight:600}.generator-box input,.generator-box select{width:100%;padding:14px 15px;margin-bottom:22px;border:1px solid #dedeea;background:#fcfcff;border-radius:10px;color:var(--dark);outline:none}
+.generator-box input:focus,.generator-box select:focus{border-color:var(--primary);box-shadow:0 0 0 3px #635bff15}.generate-btn{width:100%}
+.message{text-align:center;color:var(--primary);font-size:13px;margin-top:15px;min-height:20px}.results{display:grid;gap:12px;margin-top:20px}
+.result-card{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px;border:1px solid var(--border);border-radius:12px;background:#fcfcff}
+.result-name{font-weight:600;overflow-wrap:anywhere}.copy-btn{flex-shrink:0;padding:8px 13px;background:#eeedff;border:none;border-radius:8px;color:var(--primary);font-size:12px;font-weight:700;cursor:pointer}.copy-btn:hover{background:#dedbff}
+.footer{padding:45px 20px;text-align:center;background:#f8f8ff;border-top:1px solid var(--border)}.footer>p{color:var(--text);font-size:13px;margin-top:12px}.footer .developer{color:var(--dark);margin-top:22px}.developer strong{color:var(--primary)}.footer .copyright{font-size:11px;color:#9999aa;margin-top:15px}
+@media(max-width:1050px){.platform-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.header{padding:15px 5%;flex-wrap:wrap;gap:12px}.logo{font-size:20px}.header nav{order:3;width:100%;justify-content:center;gap:22px}.header-btn{padding:9px 12px;font-size:11px}.hero{padding:75px 18px 65px}.hero h1{letter-spacing:-1px}.hero-description{font-size:13px}.hero-note{font-size:10px}.platform-section,.generator-section{padding:60px 5%}.platform-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.platform-card{padding:18px 14px;border-radius:14px}.platform-icon{width:44px;height:44px;font-size:23px}.platform-name{font-size:13px}.platform-subtitle{font-size:10px}.generator-box{padding:22px 16px}.result-card{padding:12px}}
+/* PUBG and Free Fire logos */
+.game-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+}
+
+/* PUBG Mobile icon background */
+.platform-icon.pubg {
+    background: linear-gradient(135deg, #f6c453, #d99513);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Free Fire icon background */
+.platform-icon.freefire {
+    background: linear-gradient(135deg, #ff9a44, #ff3d2e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}/* Beautiful Generate Button */
+#generateBtn {
+    width: 100%;
+    padding: 16px 22px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #7257ff, #a855f7);
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 8px 20px rgba(114, 87, 255, 0.25);
+    transition: all 0.3s ease;
+}
+
+#generateBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(114, 87, 255, 0.4);
+}
+
+#generateBtn:active {
+    transform: scale(0.98);
+}
+
+#generateBtn i {
+    font-size: 19px;
+}

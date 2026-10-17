@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nickname Pro - Stylish Name Generator</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">
+            <span class="logo-icon"><<img
+    src="https://cdn.simpleicons.org/pubg/FFFFFF"
+    alt="PUBG Mobile"
+    class="game-logo"
+></span>
+            Nickname<span class="logo-highlight">Pro</span>
+        </a>
+
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#platforms">Platforms</a>
+            <a href="#generator">Generator</a>
+        </nav>
+
+        <a href="#generator" class="header-button">
+            Create Name <img
+    src="https://cdn.simpleicons.org/garena/FFFFFF"
+    alt="Free Fire"
+    class="game-logo"
+>
+        </a>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" id="home">
+
+            <div class="hero-badge">
+                <i class="fa-solid fa-star"></i>
+                Your Ultimate Name Generator
+            </div>
+
+            <h1>
+                Create Your
+                <span class="gradient-text">Perfect Nickname</span>
+            </h1>
+
+            <p>
+                Generate stylish, unique and creative names for gaming,
+                social media and your favorite platforms.
+            </p>
+
+            <a href="#platforms" class="primary-button">
+                Explore Platforms
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+            <a href="#generator" class="secondary-button">
+                Generate Now
+            </a>
+
+            <div class="hero-features">
+                <span><i class="fa-solid fa-check-circle"></i> Free to Use</span>
+                <span><i class="fa-solid fa-check-circle"></i> Stylish Names</span>
+                <span><i class="fa-solid fa-check-circle"></i> Easy Copy</span>
+            </div>
+
+        </section>
+
+
+        <!-- Platforms Section -->
+        <section class="platforms-section" id="platforms">
+
+            <div class="section-heading">
+                <span class="section-label">CHOOSE YOUR PLATFORM</span>
+                <h2>Find Your <span class="gradient-text">Style</span></h2>
+                <p>Select a platform to create your perfect nickname.</p>
+            </div>
+
+            <div class="platform-grid">
+
+                <!-- TikTok -->
+                <button class="platform-card" data-platform="TikTok">
+                    <span class="platform-icon tiktok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </span>
+                    <span class="platform-name">TikTok</span>
+                    <span class="platform-subtitle">Trendy usernames</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                </button>
+
+                <!-- Facebook -->
+                <button class="platform-card" data-platform="Facebook">
+                    <span class="platform-icon facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </span>
+                    <span class="platform-name">Facebook</span>
+                    <span class="platform-subtitle">Social names</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                </button>
+
+                <!-- Instagram -->
+                <button class="platform-card" data-platform="Instagram">
+                    <span class="platform-icon instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </span>
+                    <span class="platform-name">Instagram</span>
+                    <span class="platform-subtitle">Creative usernames</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                </button>
+
+                <!-- PUBG Mobile -->
+                <button class="platform-card" data-platform="PUBG Mobile">
+                    <span class="platform-icon pubg">
+                        <i class="fa-solid fa-crosshairs"></i>
+                    </span>
+                    <span class="platform-name">PUBG Mobile</span>
+                    <span class="platform-subtitle">Battle-ready names</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                </button>
+
+                <!-- Free Fire -->
+                <button class="platform-card" data-platform="Free Fire">
+                    <span class="platform-icon freefire">
+                        <i class="fa-solid fa-fire"></i>
+                    </span>
+                    <span class="platform-name">Free Fire</span>
+                    <span class="platform-subtitle">Pro gaming names</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                </button>
+
+                <!-- YouTube -->
+                <button class="platform-card" data-platform="YouTube">
+                    <span class="platform-icon youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </span>
+                    <span class="platform-name">YouTube</span>
+                    <span class="platform-subtitle">Creator names</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                </button>
+
+                <!-- WhatsApp -->
+                <button class="platform-card" data-platform="WhatsApp">
+                    <span class="platform-icon whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </span>
+                    <span class="platform-name">WhatsApp</span>
+                    <span class="platform-subtitle">Personal names</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                </button>
+
+                <!-- Gaming -->
+                <button class="platform-card" data-platform="Gaming">
+                    <span class="platform-icon gaming">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </span>
+                    <span class="platform-name">Gaming</span>
+                    <span class="platform-subtitle">Epic gamer tags</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                </button>
+
+                <!-- Cool Names -->
+                <button class="platform-card" data-platform="Cool Names">
+                    <span class="platform-icon cool">
+                        <i class="fa-solid fa-bolt"></i>
+                    </span>
+                    <span class="platform-name">Cool Names</span>
+                    <span class="platform-subtitle">Unique and cool</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                </button>
+
+                <!-- Stylish Names -->
+                <button class="platform-card" data-platform="Stylish Names">
+                    <span class="platform-icon stylish">
+                        <i class="fa-solid fa-gem"></i>
+                    </span>
+                    <span class="platform-name">Stylish Names</span>
+                    <span class="platform-subtitle">Fancy text styles</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- Nickname Generator -->
+        <section class="generator-section" id="generator">
+
+            <div class="section-heading">
+                <span class="section-label">CREATE SOMETHING UNIQUE</span>
+                <h2>Nickname <span class="gradient-text">Generator</span></h2>
+                <p>Enter a name, choose a platform and generate stylish nicknames.</p>
+            </div>
+
+            <div class="generator-box">
+
+                <label for="baseName">Enter Your Name</label>
+
+                <input
+                    type="text"
+                    id="baseName"
+                    placeholder="Example: Hamza"
+                    maxlength="25"
+                >
+
+                <label for="platformSelect">Choose Platform</label>
+
+                <select id="platformSelect">
+                    <option value="TikTok">TikTok</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="PUBG Mobile">PUBG Mobile</option>
+                    <option value="Free Fire">Free Fire</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Cool Names">Cool Names</option>
+                    <option value="Stylish Names">Stylish Names</option>
+                </select>
+
+                <button type="button" id="generateBtn" class="primary-button">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    Generate Nicknames
+                </button>
+
+                <div id="results" class="results" aria-live="polite"></div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">
+            Nickname<span class="logo-highlight">Pro</span>
+        </a>
+
+        <p>
+            Create your identity. Express your style.
+        </p>
+
+        <p class="copyright">
+            Developed with <span class="heart"></span> by
+            <strong>Hamza Hussain</strong>
+        </p>
+
+        <p class="copyright">
+            © 2026 Nickname Pro. All rights reserved.
+        </p>
+    </footer>
+
+
+    <!-- Website JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
